@@ -1,0 +1,254 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+:root{
+    --StrongCyan: hsl(171, 66%, 44%);
+    --LightBlue: hsl(233, 100%, 69%);
+    --DarkGrayishBlue: hsl(210, 10%, 33%);
+    --GrayishBlue: hsl(201, 11%, 66%);
+}
+.content{
+    margin-top: 50px;
+    margin-bottom:80px;
+    text-align: center;
+}
+.content h2{
+    font-weight:500;
+}
+.content p{
+    max-width:60%;
+    margin: auto;
+    color: var(--DarkGrayishBlue);
+}
+body{
+    font-family: "Bai Jamjuree", sans-serif;
+    font-size: 18px;
+    overflow-x: hidden;
+}
+.landing{
+    background-image: url(../images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top:150px;
+    text-align: center;
+}
+
+.landing img{
+    margin-bottom: 40px;
+}
+.landing h2{
+    font-weight:500;
+}
+.landing  p{
+    max-width:470px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: var(--DarkGrayishBlue);
+}
+.buttons a{
+    padding: 10px 35px;
+    background-color: var(--LightBlue);
+}
+.buttons a:hover{
+    box-shadow:0 .8rem 1rem  hsla(203, 66%, 44%, 0.132) !important;   
+}
+.iso{
+    background-color: var(--StrongCyan) !important;
+    box-shadow:0 .5rem 1rem  hsla(171, 66%, 44%, 0.132) !important;
+}
+@media (max-width:576px) {
+    .landing{
+        background-image: url(../images/bg-header-mobile.png);
+        background-size: cover;
+    }
+    .landing .buttons{
+      flex-direction: column;
+    }
+}
+.keep{
+    padding-top: 150px;
+}
+.keep .container-fluid{
+    padding-left:0px;
+}
+.keep .content p{
+    max-width:60%;
+    margin: auto;
+}
+.keep  .row .images img{
+    position: relative;
+    left:-45px;
+    width:100%;
+}
+.keep .row .box{
+    margin-left:30px;
+}
+.keep .row .box div:first-child{
+    margin-top:70px;
+}
+.keep .row .box div{
+    margin-bottom:50px;
+}
+.keep .row .box div p{
+    max-width: 400px;
+    color: var(--GrayishBlue);
+}
+
+@media (max-width:767px) {
+    .keep .container-fluid{
+        padding: 0;
+    }
+    .keep .row{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    } 
+    .keep .row .box div:first-child{
+        margin-top:0px;
+    }
+    .keep  .row .images{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } 
+     .content h2{
+        font-size:35px;
+        font-weight: 600;
+        max-width:60%;
+        margin: auto;
+    }
+    .keep  .row .images img{
+        width:80%;
+        left: 0;
+    }
+    .keep .box{
+        margin: auto;
+        margin-top: 50px;
+        text-align: center;
+        width:90%;
+
+    }
+    .keep .row .box div p{
+        max-width:70%;
+        margin: auto;
+    }
+}
+.access{
+    padding-top: 150px;
+}
+.access .image img{
+    width: 90%;
+}
+@media (max-width:767px) {
+    .access .image img{
+        width: 100%;
+    }
+}
+.box img{
+    width:50px;
+}
+.box .content p{
+    max-width: 100%;
+}
+@media (max-width:767px) {
+    .superch .row{
+        display: flex;
+        flex-direction: column;
+    }
+}
+.not{
+    padding-top: 100px;
+}
+@media (max-width:767px) {
+    .not .row{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+       align-items: center;
+    }
+    .not .row .col{
+        text-align: center;
+        margin-bottom:80px;
+    }
+}
+.clipboard{
+    padding-top: 150px;
+    margin-bottom: 150px;
+}
+.clipboard  p{
+    max-width:470px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: var(--DarkGrayishBlue);
+}
+@media (max-width:576px) {
+    .clipboard .buttons{
+      flex-direction: column;
+    }
+}
+footer{
+    padding-top:50px;
+    background-color: hsl(195, 4%, 81%);
+    padding-bottom: 50px;
+}
+footer img{
+    width:50px;
+}
+footer .one{
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+}
+footer .one div p a{
+    color: black;
+    text-decoration: none;
+}
+footer .one div p a:hover{
+color: var(--StrongCyan);
+}
+footer .icons a{
+    padding: 5px;
+}
+footer .icons a img{
+    width: 30px; 
+      
+}
+footer .icons a:hover{
+    color: var(--StrongCyan);
+    background-color: var(--StrongCyan);
+}
+@media (max-width:767px) {
+    footer{
+        text-align: center;
+    }
+    footer .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    footer .one{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    footer .one img{
+        margin-bottom: 30px;
+    }
+    footer .icons{
+        justify-content: center !important;
+        gap: 50px !important;
+    }
+}
+@media (min-width:768px){
+    footer .one{
+        width: 70% !important;
+        gap: 35px;
+    }
+}
